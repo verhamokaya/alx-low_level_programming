@@ -10,7 +10,7 @@ int main(void)
 	int i;
 	long int next;
 	long int prev = 1;
-	long int urrent = 1; 
+	long int current = 1; 
 
 	for (i = 1; i <= 50; i++)
 	{
