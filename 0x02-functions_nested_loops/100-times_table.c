@@ -31,7 +31,7 @@ void print_numbers(int k, int mod)
 		if (mod > 0)
 			panctuate(mod);
 	}
-	else if (k / 100)
+	else if (k < 100)
 	{
 		_putchar((k / 10) + '0');
 		_putchar((k % 10) + '0');
