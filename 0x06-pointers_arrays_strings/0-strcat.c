@@ -3,7 +3,7 @@
 /**
  * _strcat - concatenate two strings
  * @dest: char pointer
- * * @src: char pointer
+ * @src: char pointer
  *
  * Return: char *
  */
