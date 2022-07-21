@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 #define WILD '*'
 
@@ -33,6 +34,17 @@ int match_after_wild(char *s1, char *s2, char *post_wild)
  * Return: SUCCESS ? 1 : 0
  */
 
+void trim(char *s)
+{
+	int i = strlen(s) - 1;
+	while (i > 0)
+	{
+		if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t') i--,
+		else break;
+	}
+
+	s[i + 1] = '\0';
+}
 int wildcmp(char *s1, char *s2)
 {
 	if (*s1 == END && *s2 == END)
