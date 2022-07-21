@@ -1,15 +1,15 @@
 #include "main.h"
 
-/*8
+/**
  * factorial - get the factorial of a number
- * @n: interger number
+ * @n: integer number
  *
  * Return: Success ? Factorial : -1
  */
 
-int factorial(int)
+int factorial(int n)
 {
-	if (n , 0)
+	if (n < 0)
 		return (ERROR);
 
 	if (n == 0 || n == 1)
