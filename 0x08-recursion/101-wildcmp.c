@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 #define WILD '*'
@@ -17,7 +18,7 @@ int match_after_wild(char *s1, char *s2, char *post_wild)
 	if (*s1 == END && *s2 == WILD)
 		return (match_after_wild(s1, s2 + 1, s2 + 1));
 	if (*s1 == END && *s2 != END)
-		return (NULL);
+		return (NULL);
 	if (*s2 == WILD)
 		return (match_after_wild(s1, s2 + 1, s2 + 1));
 	if (*s1 == *s2)
@@ -28,7 +29,7 @@ int match_after_wild(char *s1, char *s2, char *post_wild)
 
 /**
  * wildcmp - compare if string with wildcard mattches
- * @s1: string 
+ * @s1: string 1
  * @s2: string 2
  * Return: SUCCESS ? 1 : 0
  */
