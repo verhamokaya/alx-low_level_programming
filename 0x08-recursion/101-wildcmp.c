@@ -28,7 +28,7 @@ int match_after_wild(char *s1, char *s2, char *post_wild)
 }
 
 /**
- * wildcmp - compare if string with wildcard mattches
+ * wildcmp - compare if string with wildcard matches
  * @s1: string 1
  * @s2: string 2
  * Return: SUCCESS ? 1 : 0
