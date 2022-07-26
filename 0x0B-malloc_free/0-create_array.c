@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
 
 /**
  * create_array - creates an array of char and initialize
@@ -22,5 +24,5 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 		s[i] = c;
 
-	reutn (s);
+	return (s);
 }
