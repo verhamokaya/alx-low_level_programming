@@ -1,1 +1,1 @@
-This is a static library for C
+Ox09 Static Libraries task
